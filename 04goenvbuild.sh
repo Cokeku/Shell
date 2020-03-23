@@ -3,9 +3,10 @@
 curl -O https://dl.google.com/go/go1.13.9.linux-amd64.tar.gz
 tar -zxvf go1.13.9.linux-amd64.tar.gz -C /usr/local/ > /dev/null 
 
-# 2. 设置环境变量
+# 2. 设置环境变量并设置GOPROXY
 echo 'export GOROOT=/usr/local/go/' >> /etc/profile 
 echo 'export PATH=$PATH:$GOROOT/bin' >> /etc/profile
+go env -w GOPROXY=https://goproxy.cn,direct
 
 # 3. 环境变量生效并测试清理
 source /etc/profile
