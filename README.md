@@ -3,5 +3,8 @@
 2. **gitlabFilebackup.sh**：Gitlab数据备份及定期清理
 3. **nginx_proxy_test.sh**：快速部署nginx代理测试实例
 4. **goenvbuild.sh**: 快速部署Go开发环境
+5. **getdocker.sh**：快速部署Docker环境
+6. **zkkafka.sh**：快速部署zk+kafka环境
+
 
 
