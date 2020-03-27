@@ -14,7 +14,7 @@ docker run --name zookeeper --restart always -d \
     wurstmeister/zookeeper
 
 # 3.启动kafka
-docker run -d --name kafka \
+docker run -d --name kafka --restart always -d  \
     -p 9092:9092 \
     --env KAFKA_ADVERTISED_HOST_NAME=localhost \
     --env KAFKA_ZOOKEEPER_CONNECT=${IP}:2181 \
