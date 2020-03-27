@@ -6,8 +6,9 @@ yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/
 # Step 3: 安装Docker-CE 18.06.3.ce-3.el7
 yum makecache fast
 yum -y install docker-ce-18.06.3.ce-3.el7
-# Step 4: 开启Docker服务
+# Step 4: 开启Docker服务并设置开机启动
 systemctl start docker
+systemctl enable docker
 # Step 5: 通过启动hello-world验证
 docker run hello-world
 # Step 6： 配置镜像加速器
