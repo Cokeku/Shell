@@ -25,6 +25,8 @@ docker run -d --name kafka --restart always -d  \
 
 # 测试：
 # docker exec -it kafka /bin/bash 
+# # 进入kafka的bin目录
+# cd /opt/kafka_2.12-2.4.1/bin/
 # ./kafka-topics.sh --create --zookeeper 192.168.10.20:2181 --replication-factor 1 --partitions 1 --topic test
 # ./kafka-console-producer.sh --broker-list 192.168.10.20:9092 --topic test
 # >hello # 发送一条消息并回车
@@ -32,7 +34,7 @@ docker run -d --name kafka --restart always -d  \
 
 # docker exec -it kafka /bin/bash
 # # 进入kafka的bin目录
-# cd /opt/kafka_2.12-2.2.0/bin/
+# cd /opt/kafka_2.12-2.4.1/bin/
 # # 以消费者身份接收消息
 # ./kafka-console-consumer.sh --bootstrap-server 192.168.10.20:9092 --topic test --from-beginning
 # hello # 成功接收到消息
