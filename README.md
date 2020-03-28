@@ -4,7 +4,7 @@
 3. **nginx_proxy_test.sh**：快速部署nginx代理测试实例
 4. **goenvbuild.sh**: 快速部署Go开发环境
 5. **getdocker.sh**：快速部署Docker环境
-6. **zkkafka.sh**：快速部署zk+kafka环境
-
+6. **zkkafka.sh**：快速部署zk+kafka测试环境
+7. **etcd.sh**：快速部署etcd测试环境
 
 
